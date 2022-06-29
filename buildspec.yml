@@ -18,6 +18,9 @@ phases:
     commands:
       - echo "we are in the post build phase"
 
-  artifacts:
-    files:
-      - "**/*"
+artifacts:
+  files:
+    - index.html
+    - appspec.yml
+  name: build
+  discard-paths: yes
